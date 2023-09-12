@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="sign-in">
+    <div class="sign-in__info">
+      <LogoBlock />
+      <FormBlock />
+      <CopyrightBlock />
+    </div>
+
+    <div class="sign-in__bg">
+      <BackgroundBlock />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormBlock from "./components/FormBlock.vue";
+import CopyrightBlock from "./components/CopyrightBlock.vue";
+import LogoBlock from "./components/LogoBlock.vue";
+import BackgroundBlock from "./components/BackgroundBlock.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    FormBlock,
+    CopyrightBlock,
+    LogoBlock,
+    BackgroundBlock,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import "/src/scss/style.scss";
+.sign-in{
+  display: flex;
+  gap: 156px;
 }
 </style>
