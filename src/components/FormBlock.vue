@@ -40,7 +40,6 @@
 </template>
 
 <script>
-
 import GoogleIcon from "./icons/GoogleIcon";
 import InputEl from "./UI/Input/InputEl";
 import CheckboxEl from "./UI/Checkbox/CheckboxEl";
@@ -186,6 +185,14 @@ export default {
   line-height: 20px;
   border: transparent;
   cursor: pointer;
+  border: 1px solid #5429ff;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #5429ff;
+    color: #5429ff;
+  }
 }
 ._secondary {
   border-radius: 8px;
@@ -203,6 +210,12 @@ export default {
   background-color: transparent;
   cursor: pointer;
   margin-bottom: 20px;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25),
+      inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+  }
 }
 .ending {
   display: flex;

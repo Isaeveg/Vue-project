@@ -110,7 +110,7 @@ export default {
         display: block;
         border-radius: 8px;
         border: 1px solid #d0d5dd;
-        padding: 10px 14px;
+        padding: 10px 40px 10px 14px;
         background: transparent;
     }
 }
