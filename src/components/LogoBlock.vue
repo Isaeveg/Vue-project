@@ -25,5 +25,6 @@ export default {
   font-size: 18px;
   font-weight: 600;
   color: #344054;
+  cursor: pointer;
 }
 </style>
